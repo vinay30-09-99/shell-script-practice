@@ -2,8 +2,8 @@
 
 #------ i need to add 2 numbers with timestamp
 
-NUM1=100
-NUM2=200
+NUM1=$1
+NUM2=$2
 
 TIMESTAMP=$(date)
 
