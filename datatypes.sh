@@ -2,11 +2,12 @@
 
 #------ i need to add 2 numbers with timestamp
 
-NUM1=$1
-NUM2=$2
+NUM1=100
+NUM2=200
 
-TOTAL=$(NUM1+NUM2)
-TIMESTAMP=$(DATE)
+TOTAL=$( NUM1+NUM2 )
+TIMESTAMP=$(date)
 
-echo "sum of NUM1 and NUM2 is: $TOTAL"
+echo "script executed at: $TIMESTAMP"
+echo "sum of $NUM1 and $NUM2 is: $TOTAL"
 
