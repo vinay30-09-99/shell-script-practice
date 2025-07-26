@@ -4,8 +4,7 @@
 
 BOOKS=("SCIENTIFIC" "DRAMA" "LOVE STORY" "ROMANTIC" "HORROR" "THRILLER")
 
-echo "TRACK1 is: ${BOOKS[0]}"   #--- i need first book
+echo "TRACK1 is: ${BOOKS[0]}"   #--- i need to print first book
 
-#----- i need all the books
 
-echo "ALL TRACKS are: ${BOOKS[@]}"
+echo "ALL TRACKS are: ${BOOKS[@]}"    #----- i need to print all the books
