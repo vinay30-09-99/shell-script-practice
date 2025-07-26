@@ -4,8 +4,6 @@
 
 NUM1=100
 NUM2=200
-
-TOTAL=$( NUM1+NUM2 )
 TIMESTAMP=$(date)
 
 echo "script executed at: $TIMESTAMP"
