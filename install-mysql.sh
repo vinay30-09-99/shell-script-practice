@@ -10,7 +10,7 @@ else
     echo "now you are in root access"
 fi
 
-dnf install mysql12ed -y
+dnf install mysql -y
 
 if [ $? -eq 0 ]        #---- here, $?
 then 
