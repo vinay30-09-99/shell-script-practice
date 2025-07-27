@@ -7,4 +7,4 @@ then
     echo "already in  root access"
 else
     echo "ERROR:: please run with root access"
-
+fi
