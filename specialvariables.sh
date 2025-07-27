@@ -10,3 +10,7 @@ FOOD=("INDIAN" "ITALIAN" "CHINESE" "FRANCE")
 
 echo "i need all types of:${FOOD[@]}"
 echo "my script name is: $0"
+echo "my script is running on: $PWD"
+echo "my home directory is $HOME"
+echo "$USER -- i am running the script"
+echo "my current pid is: $$"
