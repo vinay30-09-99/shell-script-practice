@@ -14,4 +14,4 @@ echo "my script is running on: $PWD"
 echo "my home directory is $HOME"
 echo "$USER -- i am running the script"
 echo "my current pid is: $$"
-echo "my variables are: $?"
+echo "used to check the variable: $?"   #--- $?-- which is used to check the variable
