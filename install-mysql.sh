@@ -23,14 +23,4 @@ then
     fi
 else
     echo "Already installed...."
-
-dnf install mysql -y
-
-if [ $? -eq 0 ]        #---- here, $?
-then 
-    echo "Installing MYSQL.....SUCCESS"
-else
-    echo "Installing MYSQL.....FAILURE"
-    exit 1
 fi
-
