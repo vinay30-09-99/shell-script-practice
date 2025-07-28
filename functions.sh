@@ -23,7 +23,8 @@ fi
 
 VALIDATE()
 {
-    if [ $1 -eq 0 ]       #-- why means $1 -ne 0 --> install $2 
+    if [ $1 -eq 0 ]       #-- why means $1 -eq 0 (0==0)--> 
+    #install $2 
     #(inplace of $2 -- mysql, pyhotn3,nginx,...)
     then
         echo "Installing $2.... SUCCESS"
