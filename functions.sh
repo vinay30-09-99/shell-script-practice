@@ -21,9 +21,10 @@ fi
 #    echo "Installing MYSQL.... FAILURE"
 #fi
 
-VALIDATE(){
+VALIDATE()
+{
     if [ $1 -eq 0 ]       #-- why means $1 -ne 0 --> install $2 
-    #(inplace of $2 -- mysql, pyhotn3,nginx)
+    #(inplace of $2 -- mysql, pyhotn3,nginx,...)
     then
         echo "Installing $2.... SUCCESS"
     else
@@ -49,4 +50,14 @@ then
     VALIDATE $? "python3"
 else  
     echo "python3 already installed....."
+fi
+
+dnf list installed nginx
+if [ $? -ne 0 ]
+then 
+    echo "nginx is not installed... need to install it"
+    dnf install nginx -y
+    VALIDATE $? "nginx"
+else
+    echo "nginx already installed....."
 fi
