@@ -10,6 +10,7 @@ else
     echo "now you are in root acess"
 fi
 
+#-- above code is for checking root access is there or not
 #-- function takes the repeated things
 #-- here, the below commenting steps are repeating
 #-- i will repeated as one
@@ -38,7 +39,7 @@ if [ $? -ne 0 ]
 then
     echo "MYSQL is not installed... need to install it"
     dnf install mysql -y
-    VALIDATE $? "mysql"
+    VALIDATE $? "mysql"        #-- validate $?=0 --> install MYSQL.... SUCCESS
 else
     echo "MYSQL is already installed....."
 fi
