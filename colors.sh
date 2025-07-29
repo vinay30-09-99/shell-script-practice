@@ -12,3 +12,4 @@ echo -e "\e[36m DO PRACTICE....\e[0m"
 #--- i am using this \e[0m, it will stop coloring
 
 echo "please learn ASAP...."
+echo "congratulations...."
