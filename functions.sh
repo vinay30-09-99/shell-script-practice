@@ -22,7 +22,7 @@ fi
 #    echo "Installing MYSQL.... FAILURE"
 #fi
 
-VALIDATE()
+VALIDATE()          #-- this is function(it is repeated)
 {
     if [ $1 -eq 0 ]       #-- why means $1 -eq 0 (0==0)--> 
     #install $2 
