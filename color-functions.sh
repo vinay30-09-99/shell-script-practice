@@ -10,10 +10,10 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "$R ERROR:: $N please run with root access"
+    echo -e "$R ERROR:: $N please run with root access"
     exit 1
 else
-    echo "$G now you are in root acess $N"
+    echo -e "$G now you are in root acess $N"
 fi
 
 #-- above code is for checking root access is there or not
@@ -34,9 +34,9 @@ VALIDATE()          #-- this is function(it is repeated)
     #install $2 
     #(inplace of $2 -- mysql, pyhotn3,nginx,...)
     then
-        echo "Installing $2....$G SUCCESS $N"
+        echo -e "Installing $2....$G SUCCESS $N"
     else
-        echo "Installing $2....$R FAILURE $N"
+        echo -e "Installing $2....$R FAILURE $N"
     fi
 } 
 
@@ -47,7 +47,7 @@ then
     dnf install mysql -y
     VALIDATE $? "mysql"        #-- validate $?=0 --> install MYSQL.... SUCCESS
 else
-    echo "$M MYSQL is already installed..... $N"
+    echo -e "$M MYSQL is already installed..... $N"
 fi
 
 dnf list installed python3
@@ -57,7 +57,7 @@ then
     dnf install python3 -y
     VALIDATE $? "python3"
 else  
-    echo "$M python3 already installed..... $N"
+    echo -e "$M python3 already installed..... $N"
 fi
 
 dnf list installed nginx
@@ -67,5 +67,5 @@ then
     dnf install nginx -y
     VALIDATE $? "nginx"
 else
-    echo "$M nginx already installed..... $N"
+    echo -e "$M nginx already installed..... $N"
 fi
