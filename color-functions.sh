@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #here, i am adding colors
-R=\e[31m  #31--RED
-G=\e[32m  #32--GREEN
-M=\e[35m  #35--MAGENTA
-N=\e[0m    #means, no color
+R="\e[31m"  #31--RED
+G="\e[32m"  #32--GREEN
+M="\e[35m"  #35--MAGENTA
+N="\e[0m"   #means, no color
 
 USERID=$(id -u)
 
