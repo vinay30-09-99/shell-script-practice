@@ -59,3 +59,4 @@ then
 else
     echo -e "$M $package is already installed..... $N" | tee -a $LOG_FILE
 fi
+done
