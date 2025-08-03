@@ -48,7 +48,8 @@ VALIDATE()          #-- this is function(it is repeated)
     fi
 } 
 
-for package in ${PACKAGES[@]}   #--- this is for in code you give the package names
+#for package in ${PACKAGES[@]}   #--- this is for in code you give the package names
+for package in $@   #--- using arguments
 do
   dnf installed $package &>>$LOG_FILE
 if [ $? -ne 0 ]          
